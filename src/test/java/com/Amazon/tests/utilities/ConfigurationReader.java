@@ -1,6 +1,7 @@
 package com.Amazon.tests.utilities;
 
-import java.io.FileInputStream;
+import  java.io.FileInputStream;
+
 import java.util.Properties;
 
 /**
