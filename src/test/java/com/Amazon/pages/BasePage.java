@@ -26,11 +26,11 @@ public abstract class BasePage {
         return e.getText();
     }
 
-    public Double getPrices(String str){
+    public Double getPrices(WebElement element){
 
         double priceOfItems=0.0;
         try{
-            String ItemPrice = Driver.get().findElement(By.xpath(str)).getText();
+            String ItemPrice = element.getText();
             ItemPrice.split("$");
              priceOfItems=Double.parseDouble(ItemPrice);
 
