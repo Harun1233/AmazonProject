@@ -30,14 +30,15 @@ public abstract class BasePage {
 
         double priceOfItems=0.0;
         try{
-            String ItemPrice = element.getText();
-            ItemPrice.split("$");
+            String ItemPrice = element.getText().substring(1);
+
              priceOfItems=Double.parseDouble(ItemPrice);
 
         }catch(Exception e){
-            e.getLocalizedMessage();
+            System.out.println(e.getLocalizedMessage());
             System.out.println("Getting prices did not work");
         }
+
 
         return priceOfItems;
     }
