@@ -2,13 +2,17 @@ package com.Amazon.pages;
 
 import com.Amazon.tests.utilities.Driver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 public class CartPage extends BasePage{
     Select select;
 
-    @FindBy(css = "#sw-gtc")
+    @FindAll({
+            @FindBy(css = "#sw-gtc"),
+            @FindBy(partialLinkText = "Cart")
+    })
     public static WebElement cartButton;
 
     @FindBy(xpath = "//select[@name='quantity']")

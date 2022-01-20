@@ -1,5 +1,6 @@
 package com.Amazon.pages;
 
+import com.Amazon.tests.utilities.BrowserUtils;
 import com.Amazon.tests.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,6 +9,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public abstract class BasePage {
 
+    BrowserUtils browserUtils;
     Select select;
 
     public BasePage() {
@@ -15,6 +17,8 @@ public abstract class BasePage {
 
     }
     public void navigateTo(WebElement e){
+        browserUtils=new BrowserUtils();
+        browserUtils.waitForVisibility(e,10);
         e.click();
     }
 
