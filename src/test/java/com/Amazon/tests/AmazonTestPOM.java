@@ -19,7 +19,7 @@ public class AmazonTestPOM extends TestBase{
         firstHat.selectFirstHat();
         priceOfHat= firstHat.getPrices(FirstHatPage.priceOfFirstHat);
         totalPrice=firstHat.dropDowns(FirstHatPage.quantityDropDown,"2")*priceOfHat;
-
+        firstHat.addToCart();
 
 
     }
