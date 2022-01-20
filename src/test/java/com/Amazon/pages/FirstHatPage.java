@@ -23,4 +23,9 @@ public class FirstHatPage extends BasePage {
 
         return super.getPrices(element);
     }
+
+    @Override
+    public String dropDowns(WebElement e, String str) {
+        return super.dropDowns(e, str);
+    }
 }
