@@ -13,6 +13,9 @@ public class FirstHatPage extends BasePage {
     @FindBy(xpath = "//span[@id='price_inside_buybox']")
     public static WebElement priceOfFirstHat;
 
+    @FindBy(xpath = "//select[@name='quantity']")
+    public static WebElement quantityDropDown;
+
     public void selectFirstHat(){
         BrowserUtils.waitForVisibility(firstHat,10);
         firstHat.click();
