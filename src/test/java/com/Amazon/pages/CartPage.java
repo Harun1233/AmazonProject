@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends BasePage{
 
-    @FindBy(css = "nav-cart-count-container")
+    @FindBy(css = "#sw-gtc")
     public static WebElement cartButton;
 
     @FindBy(xpath = "//select[@name='quantity']")
