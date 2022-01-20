@@ -1,5 +1,6 @@
 package com.Amazon.tests;
 
+import com.Amazon.pages.CartPage;
 import com.Amazon.pages.FirstHatPage;
 import com.Amazon.pages.SearchPage;
 
@@ -9,6 +10,7 @@ public class AmazonTestPOM extends TestBase{
 
     SearchPage searchPage=new SearchPage();
     FirstHatPage firstHat=new FirstHatPage();
+    CartPage cart=new CartPage();
     double priceOfHat=0.0;
     double totalPrice=0.0;
 
