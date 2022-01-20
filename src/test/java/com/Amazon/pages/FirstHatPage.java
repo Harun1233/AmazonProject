@@ -25,7 +25,7 @@ public class FirstHatPage extends BasePage {
     }
 
     @Override
-    public String dropDowns(WebElement e, String str) {
+    public double dropDowns(WebElement e, String str) {
         return super.dropDowns(e, str);
     }
 }

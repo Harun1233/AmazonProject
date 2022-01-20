@@ -19,11 +19,11 @@ public abstract class BasePage {
     }
 
     //selects quantities and returns selected quantity
-    public String dropDowns(WebElement e, String str) {
+    public double dropDowns(WebElement e, String str) {
         select = new Select(e);
         select.selectByVisibleText(str);
 
-        return e.getText();
+        return Double.parseDouble(str);
     }
 
     public Double getPrices(WebElement element){
